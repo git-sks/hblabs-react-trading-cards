@@ -6,7 +6,7 @@ class TradingCard extends React.Component {
       <div className="card">
         <h2>Name: {this.props.name}</h2>
         <img src={this.props.imgUrl} />
-        <h2>Skill: </h2>
+        <h2>Skill: {this.props.skill}</h2>
       </div>
     );
   }
@@ -43,4 +43,26 @@ ReactDOM.render(
     />
   ),
   document.querySelector('#llambda')
+);
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="Merge"
+      skill="scavenging"
+      imgUrl="/static/img/merge.jpg"
+    />
+  ),
+  document.querySelector('#merge')
+);
+
+ReactDOM.render(
+  (
+    <TradingCard
+      name="Seedpy"
+      skill="being the CEO of UberMelon"
+      imgUrl="/static/img/seedpy.jpg"
+    />
+  ),
+  document.querySelector('#seedpy')
 );
